@@ -30,9 +30,11 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-theme: minima
+remote_theme: b2a3e8/jekyll-theme-console
+# Optional but recommended
 plugins:
-  - jekyll-feed
+  - jekyll-seo-tag
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
