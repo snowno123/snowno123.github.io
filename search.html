@@ -1,0 +1,58 @@
+---
+layout: page
+title: Search
+permalink: /search/
+---
+
+<div id="searchbox"></div>
+<div id="hits"></div>
+
+<!-- Algolia & InstantSearch scripts -->
+<script src="https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4"></script>
+
+<script>
+  // 1) Replace these with your values from the Algolia dashboard
+  const searchClient = algoliasearch(
+    'ESDDY1UCXV',
+    '8802159d1180ec91f982da1813d8f8be'
+  );
+
+  const search = instantsearch({
+    indexName: 'snowno123_github_io_esddy1ucxv_articles', // e.g. "snowno123_blog"
+    searchClient,
+  });
+
+  // 2) Search box
+  search.addWidgets([
+    instantsearch.widgets.searchBox({
+      container: '#searchbox',
+      placeholder: 'Search posts…',
+      showReset: true,
+      showSubmit: true,
+      showLoadingIndicator: false,
+    }),
+
+    // 3) Results
+    instantsearch.widgets.hits({
+      container: '#hits',
+      templates: {
+        item(hit) {
+          return `
+            <article>
+              <a href="${hit.url}">
+                <h2>${instantsearch.highlight({ attribute: 'title', hit })}</h2>
+              </a>
+              <p>${instantsearch.snippet({ attribute: 'content', hit })}</p>
+            </article>
+          `;
+        },
+        empty(results) {
+          return `No results for <strong>${results.query}</strong>`;
+        }
+      }
+    })
+  ]);
+
+  search.start();
+</script>
