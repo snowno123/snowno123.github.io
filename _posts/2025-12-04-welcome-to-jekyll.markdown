@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "<meta name="algolia-site-verification"  content="D565151C632DB333" />"
 date:   2025-12-04 11:10:01 -0500
 categories: jekyll update
 ---
