@@ -3,16 +3,23 @@ layout: page
 title: About
 permalink: /about/
 ---
+<pre class="ascii">
+                          
+                                               \`*-.                    
+                                                )  _`-.                 
+                                               .  : `. .                
+                                               : _   '  \               
+                                               ; *` _.   `*-._          
+                                               `-.-'          `-.       
+                                                 ;       `       `.     
+                                                 :.       .        \    
+                                                 . \  .   :   .-'   .   
+                                                 '  `+.;  ;  '      :   
+                                                 :  '  |    ;       ;-. 
+                                                 ; '   : :`-:     _.`* ;
+  Hi, I'm Snowno! (@github.com/snowno123)     .*' /  .*' ; .*`- +'  `*' 
+I'm in my sophmore year of highschool and     `*-*   `*-*  `*-*'
+studying CS50x and cybersec. I post projects and updates on my journey to OSCP, dabbling in both C++ and C.
+My hobbies include running, carnivorous plants, and kdramas, hope you enjoy!
+</pre>
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
