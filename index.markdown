@@ -5,4 +5,3 @@
 layout: home
 ---
 
-<meta name="algolia-site-verification"  content="D565151C632DB333" />
